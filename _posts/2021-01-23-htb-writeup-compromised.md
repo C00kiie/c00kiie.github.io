@@ -1,4 +1,3 @@
-
 ---
 layout: single
 title: Compromised - Hack The Box
@@ -12,10 +11,6 @@ categories:
   - infosec
 tags:
   - linux
-  - hard
-  - php
-  - mysql
-  - backdoors
 ---
 
 ![](/assets/images/htb-writeup-compromised/compromised_logo.png)`
