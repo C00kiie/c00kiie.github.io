@@ -26,6 +26,10 @@ Compromised was rather an interesting box that forced you to look into every cor
 - Elevating to mysql user 
 - Look for root password across the system 
 
+
+
+## Initial foothold 
+
 ```
 nmap -sV -sC -oN nmap/init 10.10.10.207
 # Nmap 7.80 scan initiated Thu Nov 19 06:10:46 2020 as: nmap -sV -sC -oN nmap/init 10.10.10.207
@@ -197,7 +201,8 @@ done
 ```
 replace ```http://10.10.10.207/shop/vqmod/xml/RAND.php``` with your shell and you'll get a nice psuedo shell
 
-<h5> user </h5>
+## Pivoting to user
+
 if we check `/etc/passwd`
 
 ```
@@ -247,6 +252,9 @@ then connect as mysql
 ssh mysql@10.10.10.207
 ```
 which lands us a ssh shell as mysql-user, sadly if you look around there's not any user.txt. I'll skip it for now and look for the hacker backdoor
+
+
+## Priv esc / Root
 
 by finding newly modified files we get: 
 `find / -newermt "2020-07-14" ! -newermt "2020-09-14" -type f 2>/dev/null`
