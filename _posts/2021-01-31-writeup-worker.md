@@ -1,4 +1,5 @@
-yout: single
+---
+layout: single
 title: worker - Hack The Box
 excerpt: Worker is a simple box that included SVN which exposed credentials leading to an RCE; After navigating through the web application, we do a command injection as administrator 
 date: 2021-01-30
@@ -14,7 +15,8 @@ tags:
   - command_injection
 ---
 
-![](/assets/images/htb-writeup-worker/worker_logo.png)`
+![](assets/images/htb-writeup-worker/worker_logo.png)`
+
 
  
 ## TO-DO list
