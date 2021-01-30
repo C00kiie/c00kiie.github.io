@@ -201,7 +201,7 @@ Open two terminals
 Shell A
 ```bash
 nc -lnvp 4995
-``
+```
 
 Shell B
 ```bash
