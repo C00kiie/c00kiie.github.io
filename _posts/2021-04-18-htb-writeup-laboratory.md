@@ -2,7 +2,7 @@
 layout: single
 title: Laboratory - Hack The Box
 excerpt: Laboratory is mainly about exploiting a running gitlab instance. The privesc is exploiting a binary that doesn't address a binary by its full path. 
-date: 2021-014-18
+date: 2021-04-18
 classes: wide
 header:
   teaser: /assets/images/htb-writeup-laboratory/laboratory_logo.png
