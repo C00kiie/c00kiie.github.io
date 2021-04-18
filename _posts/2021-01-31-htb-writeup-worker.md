@@ -6,6 +6,8 @@ date: 2021-01-30
 classes: wide
 header:
   teaser: /assets/images/htb-writeup-worker/worker_logo.png
+  teaser_home_page: true
+  icon: /assets/images/hackthebox.webp
 categories:
   - hackthebox
   - infosec
