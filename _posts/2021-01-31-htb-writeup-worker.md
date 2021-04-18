@@ -15,7 +15,7 @@ tags:
   - command_injection
 ---
 
-![](assets/images/htb-writeup-worker/worker_logo.png)
+![](/assets/images/htb-writeup-worker/worker_logo.png)
 
 
  

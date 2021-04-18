@@ -15,7 +15,7 @@ tags:
   - gitlab
 ---
 
-![](assets/images/htb-writeup-laboratory/laboratory_logo.png)
+![](/assets/images/htb-writeup-laboratory/laboratory_logo.png)
 
 Laboratory is rather an interesting box that is about exploiting a gitlab instance vulnerable with an LFI which can be used to leak a secret that can be used to craft an authenticated RCE payload. 
 
